@@ -232,7 +232,7 @@
         async function startCamera() {
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({ 
-                    video: { width: 640, height: 480 } 
+                    video: { width: 640, height: 480 ,facingMode:'environment'} 
                 });
                 video.srcObject = stream;
                 cameraStarted = true;
